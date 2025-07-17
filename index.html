@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask for Tips – SEO & Tech Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    /* Dark mode toggle */
+    body.dark {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    a {
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #3b82f6;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 transition-colors duration-500">
+  <header class="bg-gray-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold tracking-tight cursor-pointer">Ask for Tips</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#tips" class="hover:underline">SEO Tips</a>
+        <a href="#about" class="hover:underline">About</a>
+      </nav>
+      <button id="darkToggle" class="md:hidden bg-gray-700 px-3 py-1 rounded">Toggle Dark</button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6">
+    <section id="home" class="mb-12">
+      <h2 class="text-4xl font-extrabold mb-4">Welcome to Ask for Tips</h2>
+      <p class="text-gray-700 dark:text-gray-300 text-lg max-w-3xl">
+        Learn practical SEO tips, tech tricks, and stylish coding ideas to level up your skills.
+      </p>
+    </section>
+
+    <section id="tips" class="mb-12 grid md:grid-cols-2 gap-8">
+      <article class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-semibold mb-2">🔍 Keyword Research</h3>
+        <p>Use tools like Google Keyword Planner and Ubersuggest. Focus on long-tail keywords for better traffic.</p>
+      </article>
+      <article class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-semibold mb-2">📝 Meta Tag Optimization</h3>
+        <p>Write concise meta titles (under 60 chars) and descriptions (under 160 chars) with relevant keywords.</p>
+      </article>
+      <article class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-semibold mb-2">📐 Proper Heading Structure</h3>
+        <p>Use a single H1 per page, then H2 and H3 for sections and subsections to organize content.</p>
+      </article>
+      <article class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <h3 class="text-2xl font-semibold mb-2">🖼️ Image Optimization</h3>
+        <p>Compress images and add descriptive alt texts to improve load time and SEO.</p>
+      </article>
+    </section>
+
+    <section id="about" class="text-gray-700 dark:text-gray-300">
+      <h2 class="text-3xl font-bold mb-4">About</h2>
+      <p>This site is created for SEO learning and practice. Built with modern, clean design using Tailwind CSS.</p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 dark:bg-gray-900 text-center py-4 text-gray-600 dark:text-gray-400 mt-20">
+    &copy; 2025 Ask for Tips. Built with ❤️ by you!
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('darkToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
